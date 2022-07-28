@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+}
+.logo{
+    width: 150px;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navigation ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+.navigation ul li a:hover{
+    border-bottom: 2px solid #138ecc;
+}
+.navigation .search{
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+.navigation .perfil{
+    width: 40px;
+    cursor: pointer;
+}
+
+/*Main*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+main section .logoBoys{
+    width: 35em;
+    margin: 3em 0;
+}
+main section .btn-box{
+    display: flex;
+    gap: 20px;
+}
+.btn-box .btn{
+    padding: 20px 45px;
+    background: #425265;
+    margin-bottom: 2em;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .3s;
+}
+.btn-box .btn:hover{
+    background: #2d3846;
+}
+.btn-box .btn:focus{
+    background: #2d3846;
+}
+main section .text{
+    color: #fff;
+    line-height: 22px;
+}
+.btn-box2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 45px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2em;
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    background: #0f79af;
+    transition: all .3s;
+}
+.btn-box2:hover{
+    background: #138ecc;
+}
+.btn-box2 .play{
+    width: 1.4em;
+    filter: invert(1);
+}
+footer .cards{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+.cards .card{
+    height: 180px;
+    max-width: 300px;
+    
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+.cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards .card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+.cards .card:hover ~ .card{
+    transform: translateX(140px);
+}
